@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #242424;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+  background-color:#756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-header {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.main-index {
+   color: black;
+   text-align: center;
+   background-color: #FFFFFF;
+}
+
+.advantages {
+  width: 1200px;
+  margin: 0 auto;
+  background-image: url("../images/index-background.jpg"), url("../images/hero-end.png");
+  color: #000000;
+  background-color: #ffffff;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position:bottom left ,0 0;
+}
+
+.advantages-title {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 36px;
+   text-transform: uppercase;
+}
+
+.advantages-description {
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 26px;
+   color: #000000;
+}
+
+.advantages-list {
+  list-style: none;
+  text-align: center;
+}
+
+.advantages-item {
+ width:  200px;
+ height: 200px;
+ outline: 4px solid green;
+ color: #000000;
+ background-color: #FFFFFF;
+}
+
+.item-toun,
+.item-bridge {
+ background-color: #82B3D3;
+ color:#FFFFFF;
+}
+
+.item-home,
+.item-present,
+.item-tourist,
+.item-square {
+  color: #000000;
+  background-color:rgba(131,179,211,0.12);
+}
+
+.item-road {
+  color: #000;
+  background-color:rgba(131,179,211,0.2) ;
+}
+
+.recommendations-item {
+
+}
+
+
+.header {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation-list {
+  display: flex;
+  width: 420px;
+  margin:0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation-user {
+  display: flex;
+}
+
+.advantages-list li:first-child {
+  background-color: #82B3D3;
+5  color: white;
+}
+
+

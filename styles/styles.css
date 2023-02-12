@@ -20,9 +20,17 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  color: #242424;
+  color: #333333;
   background-color: #ffffff;
-  text-align: center;
+  background: #F2F2F2;
+  margin: 0;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgb(0, 0, 0 / 0.2);
 }
 
 .visually-hidden {
@@ -50,18 +58,56 @@ body {
   text-transform: uppercase;
 }
 
-.page-header {
-  color: #ffffff;
-  background-color: #000000;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 70px;
+  gap: 30px;
+
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: inherit;
+}
+  
+}
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 620px;
+  margin:0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  
 }
 
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
+}
+
+.navigation-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  width: 268px;
+  background-image: url("../images/header/search.svg"), url("../images/header/heart.svg");
+  background-repeat: no-repeat;
+
 }
 
 .main-index {
@@ -70,15 +116,46 @@ body {
    background-color: #FFFFFF;
 }
 
-.advantages {
+.main-index-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.main-index-subtitle {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.advantages-list {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantages-item-toun,
+.advantages-item-bridge {
+  background: #82B3D3;
+}
+
+.advantages-item-square,
+.advantages-item-tourist {
+  background: #83B3D31F;
+}
+
+.advantages-item-road {
+  background: #83B3D333;
+}
+
+.hero {
   width: 1200px;
   margin: 0 auto;
-  background-image: url("../images/index-background.jpg"), url("../images/hero-end.png");
+  background-image: url("../images/index-background.jpg");
   color: #000000;
   background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position:bottom left ,0 0;
+  background-position: bottom ,0 0;
 }
 
 .advantages-title {
@@ -108,58 +185,75 @@ body {
  background-color: #FFFFFF;
 }
 
-.item-toun,
-.item-bridge {
- background-color: #82B3D3;
- color:#FFFFFF;
+
+
+.item-house {
+  background: #83B3D31F ;
+  background-image: url("../images/house.svg");
+  background-repeat: no-repeat;
+  background-position: center; ,0 0;
 }
 
-.item-home,
-.item-present,
-.item-tourist,
-.item-square {
+.item-food {
+  background-image: url("../images/food.svg");
+  background-repeat: no-repeat;
+  background-position: center; ,0 0;
+}
+
+.item-present {
+  background: #83B3D31F ;
+  background-image: url("../images/present.svg");
+  background-repeat: no-repeat;
+  background-position: center ,0 0;
+}
+
+.subscribe-index {
+  background-image: url("../images/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom ,0 0;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-social {
+  width: 142px;
+}
+
+.footer-contacts{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-link {
+  text-decoration: none;
+  text-transform: uppercase;
   color: #000000;
-  background-color:rgba(131,179,211,0.12);
 }
 
-.item-road {
-  color: #000;
-  background-color:rgba(131,179,211,0.2) ;
+.footer-link-vk {
+  background-image: url("../images/footer/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center ,0 0;
 }
 
-.recommendations-item {
-
+.footer-link-telegram {
+  background-image: url("../images/footer/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center ,0 0;
 }
 
-
-.header {
-  display: flex;
-}
-
-.navigation {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  text-decoration: none;
-  color: inherit;
-}
-
-.navigation-list {
-  display: flex;
-  width: 420px;
-  margin:0;
-  padding: 0;
-  text-decoration: none;
-  color: inherit;
-}
-
-.navigation-user {
-  display: flex;
-}
-
-.advantages-list li:first-child {
-  background-color: #82B3D3;
-5  color: white;
+.footer-link-tyoutube {
+  background-image: url("../images/footer/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center ,0 0;
 }
 
 

@@ -6,7 +6,6 @@
   font-display: swap;
 }
 
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -30,7 +29,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background: #ffffff;
-  box-shadow: 0px 0px 15px rgb(0, 0, 0 / 0.2);
+  box-shadow: 0 0 15px rgb(0, 0, 0 / 0.2);
 }
 
 .visually-hidden {
@@ -52,10 +51,11 @@ body {
   line-height: 20px;
   font-weight: 700;
   text-align: center;
-  color: #000;
+  color: #ffffff;
   background-color:#756157;
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
 }
 
 .header {
@@ -63,7 +63,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0px 70px;
+  padding: 0 70px;
   gap: 30px;
 
 }
@@ -75,8 +75,7 @@ body {
   text-decoration: none;
   color: inherit;
 }
-  
-}
+
 .navigation-list {
   display: flex;
   flex-direction: row;
@@ -86,7 +85,7 @@ body {
   padding: 0;
   text-decoration: none;
   color: inherit;
-  
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -102,30 +101,33 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 20px;
   width: 268px;
   background-image: url("../images/header/search.svg"), url("../images/header/heart.svg");
   background-repeat: no-repeat;
-
+  list-style-type: none;
 }
 
 .main-index {
-   color: black;
-   text-align: center;
-   background-color: #FFFFFF;
+  background-color: #FFFFFF;
+  text-align: center;
 }
 
-.main-index-title {
+.sedona {
+  text-align: center;
+}
+.sedona-title {
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
+  text-transform: uppercase;
 }
-
-.main-index-subtitle {
+.sedona-subtitle {
   font-size: 22px;
   line-height: 26px;
-  font-weight: 400;
+}
+.hero-image {
+  background-position: center ,center;
 }
 
 .advantages-list {
@@ -136,6 +138,7 @@ body {
 .advantages-item-toun,
 .advantages-item-bridge {
   background: #82B3D3;
+  color: #ffffff;
 }
 
 .advantages-item-square,
@@ -152,29 +155,32 @@ body {
   margin: 0 auto;
   background-image: url("../images/index-background.jpg");
   color: #000000;
-  background-color: #ffffff;
+  background-color: #4d8ab3;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: bottom ,0 0;
 }
 
+.advantages {
+  text-align: center;
+}
 .advantages-title {
    font-weight: 700;
-   font-size: 30px;
-   line-height: 36px;
+   font-size: 24px;
+   line-height: 28px;
    text-transform: uppercase;
 }
 
 .advantages-description {
    font-weight: 400;
-   font-size: 22px;
-   line-height: 26px;
+   font-size: 18px;
+   line-height: 21px;
    color: #000000;
 }
 
 .advantages-list {
   list-style: none;
-  text-align: center;
+
 }
 
 .advantages-item {
@@ -185,19 +191,17 @@ body {
  background-color: #FFFFFF;
 }
 
-
-
 .item-house {
   background: #83B3D31F ;
   background-image: url("../images/house.svg");
   background-repeat: no-repeat;
-  background-position: center; ,0 0;
+  background-position: center, 0 0;
 }
 
 .item-food {
   background-image: url("../images/food.svg");
   background-repeat: no-repeat;
-  background-position: center; ,0 0;
+  background-position: center, 0 0;
 }
 
 .item-present {
@@ -207,13 +211,69 @@ body {
   background-position: center ,0 0;
 }
 
-.subscribe-index {
+.services {
+  text-align: center;
+  list-style-type: none;
+}
+
+.services-invite-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.services-invite-subtitle {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.services-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.services-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+.services-list {
+  list-style-type: none;
+}
+
+.search {
+  text-align: center;
+}
+
+.hotel-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.hotel-subtitle {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe {
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: bottom ,0 0;
+  color: #ffffff;
+  text-align: center;
+}
+.subscribe-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
-.page-footer {
+.subscribe-subtitle {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -222,6 +282,7 @@ body {
 
 .footer-social {
   width: 142px;
+
 }
 
 .footer-contacts{
@@ -238,19 +299,19 @@ body {
   color: #000000;
 }
 
-.footer-social-item {
+.footer-social-vk {
   background-image: url("../images/footer/vk.svg");
   background-repeat: no-repeat;
   background-position: center ,0 0;
 }
 
-.footer-link-telegram {
+.footer-social-telegram {
   background-image: url("../images/footer/telegram.svg");
   background-repeat: no-repeat;
   background-position: center ,0 0;
 }
 
-.footer-link-tyoutube {
+.footer-social-youtube {
   background-image: url("../images/footer/youtube.svg");
   background-repeat: no-repeat;
   background-position: center ,0 0;

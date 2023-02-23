@@ -10,32 +10,26 @@
   <body>
     <div class="wrapper">
     <header class="header">
-      <a class="main-header-logo">
-          <img src="images/header/logo.svg"  width="140" height="70" alt="Логотип сайта городка Седона">
+      <a class="header-link">
+          <img class="header-logo" src="images/header/logo.svg"  width="140" height="70" alt="Логотип сайта городка Седона">
         </a>
 
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <div class="navigation-item-container">
-              <a class="navigation-link" href="">Главная</a>
-            </div>
+            <a class="navigation-link" href="">Главная</a>
           </li>
           <li class="navigation-item">
-            <div class="navigation-item-container">
-              <a class="navigation-link" href="#">О Седоне</a>
-            </div>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <div class="navigation-item-container">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
-            </div>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-user link-search" href="#">
               <!--<img src="images/header/search.svg" alt="Поиск">-->
               <span class="visually-hidden">
                 Поиск
@@ -43,12 +37,12 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-user link-favorites" href="#">
               <!--<img src="images/header/heart.svg" alt="Избранное">-->
               <span class="visually-hidden">
                 Избранное
               </span>
-              <span class="favourite-number">12</span>
+              <span class="favorites-number">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -142,66 +136,60 @@
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <h3 class="hotel-title">Заинтересовались?</h3>
         <p class="hotel-subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button" href="">Поиск гостиницы в Седоне</a>
+        <a class="button search-button" href="">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscribe">
         <!--<img src="images/Subscribe.jpg" alt="подписка">-->
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <h3 class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</h3>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscribe-email" class="visually-hidden">Введите ваш e-mail</label>
-          <input class="subscribe-email" id="subscribe-email" type="email" name="newsletter-email" placeholder="Ваш e-mail">
-          <button class="button subscribe-button" type="submit">
-            <span class="button">Подписаться</span>
-          </button>
-       </form>
+        <div class="subscribe-container">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <h3 class="subscribe-subtitle">Только полезная информация и никакого спама,<br> честное бойскаутское!</h3>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="subscribe-email" class="visually-hidden">Введите ваш e-mail</label>
+            <input class="subscribe-email" id="subscribe-email" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+            <button class="button subscribe-button" type="submit">
+              <span class="button">Подписаться</span>
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-container">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Соцсети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-vk">
-              <div class="footer-social-container">
-                <a class="footer-link" href="#">
-                  <!--<img src="images/footer/vk.svg" alt="vkontakte">-->
-                  <span class="visually-hidden">Вконтакте</span>
-                </a>
-              </div>
-            </li>
-            <li class="footer-social-telegram">
-              <div class="footer-social-container">
-                <a class="footer-link" href="#">
-                  <!--<img src="images/footer/telegram.svg" alt="telegram">-->
-                  <span class="visually-hidden">Телеграм</span>
-                </a>
-              </div>
-            </li>
-            <li class="footer-social-youtube">
-              <div class="footer-social-container">
-                <a class="footer-link" href="#">
-                  <!--<img src="images/footer/youtube.svg" alt="youtube">-->
-                  <span class="visually-hidden">Ютуб</span>
-                </a>
-              </div>
-            </li>
-          </ul>
-        </section>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Соцсети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-vk">
+            <a class="footer-link" href="#">
+              <!--<img src="images/footer/vk.svg" alt="vkontakte">-->
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-telegram">
+            <a class="footer-link" href="#">
+              <!--<img src="images/footer/telegram.svg" alt="telegram">-->
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-youtube">
+            <a class="footer-link" href="#">
+              <!--<img src="images/footer/youtube.svg" alt="youtube">-->
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <a class="footer-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
-        <section class="footer-logo">
-          <h2 class="visually-hidden">Разработчик</h2>
-          <a class="footer-link" href="https://htmlacademy.ru/">
-            <img class="logo" width="115" height="34" src="images/footer/htmlacademy.svg" alt="html academy">
-          </a>
-        </section>
-      </div>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <a class="footer-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+      <section class="footer-logo">
+        <h2 class="visually-hidden">Разработчик</h2>
+        <a class="footer-link" href="https://htmlacademy.ru/">
+          <img class="logo" width="115" height="34" src="images/footer/htmlacademy.svg" alt="html academy">
+        </a>
+      </section>
     </footer>
     </div>
   </body>

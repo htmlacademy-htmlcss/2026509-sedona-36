@@ -105,7 +105,9 @@ body {
   list-style-type: none;
 }
 
+.navigation-item {
 
+}
 
 .navigation-link {
   display: block;
@@ -434,9 +436,11 @@ body {
 }
 
 .footer-social-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 47px 47px 47px;
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
   align-items: flex-start;
   list-style-type: none;
 }
@@ -449,6 +453,7 @@ body {
 }
 
 .footer-link {
+  min-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
@@ -456,6 +461,7 @@ body {
 
 .footer-social-vk {
   width: 47px;
+  min-height: 40px;
   background-image: url("../images/footer/vk.svg");
   background-repeat: no-repeat;
   background-position: center ,0 0;
@@ -463,6 +469,7 @@ body {
 
 .footer-social-telegram {
   width: 47px;
+  min-height: 40px;
   background-image: url("../images/footer/telegram.svg");
   background-repeat: no-repeat;
   background-position: center ,0 0;
@@ -470,9 +477,12 @@ body {
 
 .footer-social-youtube {
   width: 47px;
+  min-height: 40px;
   background-image: url("../images/footer/youtube.svg");
   background-repeat: no-repeat;
   background-position: center ,0 0;
 }
 
-
+.logo {
+  display: block;
+}

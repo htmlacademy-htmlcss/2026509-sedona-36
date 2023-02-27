@@ -105,9 +105,7 @@ body {
   list-style-type: none;
 }
 
-.navigation-item {
 
-}
 
 .navigation-link {
   display: block;
@@ -127,13 +125,19 @@ body {
 }
 
 .link-search {
+  width: 44px;
+  min-height: 40px;
   background-image: url("../images/header/search.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .link-favorites {
+  width: 44px;
+  min-height: 40px;
   background-image: url("../images/header/heart.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .favorites-number {
@@ -144,6 +148,10 @@ body {
   background-color: #7DB54F;
   text-decoration: none;
   text-align: center;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  margin-left: 22px;
 }
 .navigation-link-here {
   font-weight: 700;
@@ -153,14 +161,16 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 50px 8px 50px;
 }
 
 .navigation-user {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 44px 44px 192px;
   align-items: center;
   padding: 0;
-  margin-left: auto;
+  margin-left: 70px;
   gap: 20px;
   width: 268px;
 

@@ -64,7 +64,7 @@ body {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color:#756157;
+
   text-decoration: none;
   text-transform: uppercase;
   border: none;
@@ -80,11 +80,14 @@ body {
 
 }
 
+.header-logo {
+  position: relative;
+  margin-bottom: -10px;
+}
+
 .navigation {
   display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   text-decoration: none;
   color: inherit;
 }
@@ -93,21 +96,20 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  width: 339px;
-
+  flex-wrap: wrap;
+  width: 500px;
+  margin: 0;
   padding: 0;
   text-decoration: none;
   color: inherit;
   list-style-type: none;
 }
 
-.navigation-item-container {
-  width: auto;
-  padding: 20px, 16px, 20px, 16px;
-}
+
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -116,7 +118,29 @@ body {
   text-decoration: none;
 }
 
-.favourite-number {
+.navigation-user-link {
+  display: flex;
+  width: 44px;
+
+}
+
+.link-search {
+  width: 44px;
+  min-height: 40px;
+  background-image: url("../images/header/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link-favorites {
+  width: 44px;
+  min-height: 40px;
+  background-image: url("../images/header/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.favorites-number {
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
@@ -124,6 +148,10 @@ body {
   background-color: #7DB54F;
   text-decoration: none;
   text-align: center;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  margin-left: 22px;
 }
 .navigation-link-here {
   font-weight: 700;
@@ -133,23 +161,30 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 50px 8px 50px;
 }
 
 .navigation-user {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 44px 44px 192px;
   align-items: center;
   padding: 0;
-  margin-left: auto;
+  margin-left: 70px;
   gap: 20px;
   width: 268px;
-  background-image: url("../images/header/search.svg"), url("../images/header/heart.svg");
-  background-repeat: no-repeat;
+
   list-style-type: none;
+}
+
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 22px;
 }
 
 .main-container {
   flex-grow: 1;
+
 }
 .main-index {
   background-color: #FFFFFF;
@@ -157,19 +192,23 @@ body {
 }
 
 .sedona {
-  text-align: center;
+  margin: 69px 290px;
 }
 .sedona-title {
+  width: 651px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 .sedona-subtitle {
+  width: 651px;
   font-size: 22px;
   line-height: 26px;
 }
 .hero-image {
   background-position: center ,center;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .advantages-list {
@@ -184,9 +223,10 @@ body {
 }
 
 .advantages-item-container {
-  width: 230px;
+  width: 400px;
   min-height: 200px;
   padding: 90px 85px;
+  box-sizing: border-box;
 }
 .advantages-image {
   display: flex;
@@ -215,16 +255,22 @@ body {
   background: #83B3D333;
 }
 
+.services-invite {
+  margin: 64px 347.5px;
+}
+
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
 
 .services-item-container {
-  width: 230px;
-  padding: 90px 85px;
+  width: 400px;
+  padding: 151px 85px 65px 85px;
   min-height: 200px;
+  box-sizing: border-box;
 }
 
 .hero {
@@ -233,13 +279,14 @@ body {
   background-image: url("../images/index-background.jpg");
   color: #000000;
   background-color: #4d8ab3;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom ,0 0;
 }
 
 .advantages {
   text-align: center;
+  margin-top: 90px;
 }
 .advantages-title {
    font-weight: 700;
@@ -258,20 +305,20 @@ body {
   background: #83B3D31F ;
   background-image: url("../images/house.svg");
   background-repeat: no-repeat;
-  background-position: top, center;
+  background-position: center 81px;
 }
 
 .item-food {
   background-image: url("../images/food.svg");
   background-repeat: no-repeat;
-  background-position: top, 0 0;
+  background-position: center 81px;
 }
 
 .item-present {
   background: #83B3D31F ;
   background-image: url("../images/present.svg");
   background-repeat: no-repeat;
-  background-position: top ,0 0;
+  background-position: center 81px;
 }
 
 .services {
@@ -301,6 +348,14 @@ body {
 
 .search {
   text-align: center;
+  width: 592px;
+  margin: 96px 304px 69px 304px
+}
+
+.search-button {
+  padding: 8px 50px 8px 50px;
+  border-radius: 4px;
+  background-color:#756157;
 }
 
 .hotel-title {
@@ -312,43 +367,70 @@ body {
 .hotel-subtitle {
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 46px;
 }
 
 .subscribe {
+
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: bottom ,0 0;
+  background-size: cover;
   color: #ffffff;
   text-align: center;
 }
+
+.subscribe-container {
+  width: 684px;
+  padding: 96px 258px 104px 258px;
+  box-sizing: content-box;
+}
+
 .subscribe-title {
+
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .subscribe-subtitle {
+  width: 475px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 54px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.subscribe-email {
+  width: 452px;
+  border-radius: 4px 0px 0px 4px;
+  border-style: none;
+}
+
+.subscribe-button {
+  width: 238px;
+  background-color: #82B3D3;
+  border-radius: 0px 4px 4px 0px;
+  padding: 8px 50px 8px 50px;
 }
 
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-}
-
-.footer-container {
   width: 1060px;
   margin: 40px 70px 30px 70px;
   padding: 5px 0px 5px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: flex-start;
 }
+
+
 
 .footer-social {
   flex-direction: row;
@@ -364,9 +446,11 @@ body {
 }
 
 .footer-social-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 47px 47px 47px;
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
   align-items: flex-start;
   list-style-type: none;
 }
@@ -379,27 +463,36 @@ body {
 }
 
 .footer-link {
+  min-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
 }
 
 .footer-social-vk {
+  width: 47px;
+  min-height: 40px;
   background-image: url("../images/footer/vk.svg");
   background-repeat: no-repeat;
   background-position: center ,0 0;
 }
 
 .footer-social-telegram {
+  width: 47px;
+  min-height: 40px;
   background-image: url("../images/footer/telegram.svg");
   background-repeat: no-repeat;
   background-position: center ,0 0;
 }
 
 .footer-social-youtube {
+  width: 47px;
+  min-height: 40px;
   background-image: url("../images/footer/youtube.svg");
   background-repeat: no-repeat;
   background-position: center ,0 0;
 }
 
-
+.logo {
+  display: block;
+}

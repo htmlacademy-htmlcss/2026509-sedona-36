@@ -167,14 +167,17 @@ body {
 
 .navigation-user {
   display: grid;
-  grid-template-columns: 44px 44px 192px;
+  grid-template-columns: 44px 44px 212px;
   align-items: center;
   padding: 0;
   margin-left: 70px;
-  gap: 20px;
-  width: 268px;
+  width: 320px;
 
   list-style-type: none;
+}
+
+.item-here {
+  margin-left: 20px;
 }
 
 .navigation-user .navigation-link {
@@ -395,6 +398,8 @@ body {
 
 .subscribe-subtitle {
   width: 475px;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -425,8 +430,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 1060px;
-  margin: 40px 70px 30px 70px;
-  padding: 5px 0px 5px 0px;
+  padding: 40px 70px 30px 70px;
   align-items: flex-start;
 }
 
@@ -454,6 +458,11 @@ body {
   align-items: flex-start;
   list-style-type: none;
 }
+
+.footer-social-item {
+  display: grid;
+}
+
 .footer-contacts{
   font-weight: 400;
   font-size: 40px;
@@ -469,7 +478,7 @@ body {
   color: #000000;
 }
 
-.footer-social-vk {
+.footer-link-vk {
   width: 47px;
   min-height: 40px;
   background-image: url("../images/footer/vk.svg");
@@ -477,7 +486,7 @@ body {
   background-position: center ,0 0;
 }
 
-.footer-social-telegram {
+.footer-link-telegram {
   width: 47px;
   min-height: 40px;
   background-image: url("../images/footer/telegram.svg");
@@ -485,7 +494,7 @@ body {
   background-position: center ,0 0;
 }
 
-.footer-social-youtube {
+.footer-link-youtube {
   width: 47px;
   min-height: 40px;
   background-image: url("../images/footer/youtube.svg");

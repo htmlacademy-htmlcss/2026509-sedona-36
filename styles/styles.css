@@ -41,7 +41,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background: #ffffff;
-  box-shadow: 0 0 15px rgb(0, 0, 0 / 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -107,7 +107,8 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 20px 16px;;
+  padding: 20px 0;
+  margin: 0 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -116,24 +117,24 @@ body {
   text-decoration: none;
   position: relative;
 }
-.navigation-link::after {
+.navigation-link-current::after {
   content: "";
   width: 100%;
   height: 2px;
   display: none;
   background-color: #000000;
   position: absolute;
-  top: 100%;
+  bottom: 0;
   left: 0;
   z-index: 1;
 }
 
-.navigation-link:hover:after {
+.navigation-link-current:hover:after {
   display: block;
 }
 
 .navigation-link:hover {
-  background-color: #dad8d8;
+  opacity: 0.6;
 }
 
 .navigation-link:focus {
@@ -142,11 +143,11 @@ body {
 }
 
 .navigation-link:active {
-  background-color: #82b3d3;
+  opacity: 0.3;
 }
 
 .navigation-user-link:hover {
-  background-color: #dad8d8;
+  opacity: 0.6;
 }
 
 .navigation-user-link:focus {
@@ -155,11 +156,11 @@ body {
 }
 
 .navigation-user-link:active {
-  background-color: #82b3d3;
+  opacity: 0.3;
 }
 
 .link-here:hover {
-  background-color: #5e412a;
+  opacity: 0.6;
 }
 
 .link-here:focus {
@@ -168,11 +169,11 @@ body {
 }
 
 .link-here:active {
-  background-color: #d1764c;
+  opacity: 0.3;
 }
 
 .header-logo:hover {
-  background-color: #dad8d8;
+  opacity: 0.6;
 }
 
 .header-logo:focus {
@@ -181,7 +182,7 @@ body {
 }
 
 .header-logo:active {
-  background-color: #b8c3ca;
+  opacity: 0.3;
 }
 
 .navigation-icon {
@@ -197,7 +198,7 @@ body {
 .navigation-user-link {
   display: flex;
   width: 44px;
-  min-height: 20px;
+  min-height: 60px;
   position: relative;
 
 }
@@ -215,7 +216,7 @@ body {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: -8px;
+  top: 11px;
   right: 2px;
   padding-top: 4px;
   box-sizing: border-box;
@@ -239,7 +240,7 @@ body {
   grid-template-columns: 44px 44px 212px;
   align-items: center;
   padding: 0;
-  margin-left: 70px;
+  margin-left: 122px;
   width: 320px;
 
   list-style-type: none;
@@ -265,7 +266,7 @@ body {
 }
 
 .sedona {
-  margin: 69px 290px;
+  margin: 61px 276px;
 }
 .sedona-title {
   width: 651px;
@@ -298,6 +299,7 @@ body {
 .advantages-item-container {
   width: 400px;
   min-height: 200px;
+  height: 385px;
   padding: 90px 85px;
   box-sizing: border-box;
 }
@@ -395,6 +397,7 @@ body {
   background-position: bottom ,0 0;
 }
 
+
 .advantages {
   text-align: center;
   margin-top: 90px;
@@ -403,6 +406,7 @@ body {
 .advantages-title {
   position: relative;
   margin: 0;
+  padding-top: 26px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -464,17 +468,19 @@ body {
 .search {
   text-align: center;
   width: 592px;
-  margin: 96px 304px 69px 304px
+  margin: 105px 304px 102px 304px;
 }
 
 .search-button {
-  padding: 8px 50px 8px 50px;
+  padding: 10px 50px 10px 50px;
   border-radius: 4px;
   background-color:#756157;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .search-button:hover {
-  background-color: #5e412a;
+  opacity: 0.6;
 }
 
 .search-button:focus {
@@ -483,18 +489,20 @@ body {
 }
 
 .search-button:active {
-  background-color: #d1764c;
+  opacity: 0.3;
 }
+
 .hotel-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .hotel-subtitle {
   font-size: 22px;
   line-height: 26px;
-  margin-bottom: 46px;
+  margin-bottom: 62px;
 }
 
 .subscribe {
@@ -509,7 +517,7 @@ body {
 
 .subscribe-container {
   width: 684px;
-  padding: 96px 258px 104px 258px;
+  padding: 96px 258px 109px 258px;
   box-sizing: content-box;
 }
 
@@ -518,6 +526,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .subscribe-subtitle {
@@ -540,6 +549,9 @@ body {
   width: 452px;
   border-radius: 4px 0px 0px 4px;
   border-style: none;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 20px;
 }
 
 .subscribe-button {
@@ -547,10 +559,13 @@ body {
   background-color: #82B3D3;
   border-radius: 0px 4px 4px 0px;
   padding: 8px 50px 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
+
 .subscribe-button:hover {
-  background-color: #68A2CA;
+  opacity: 0.6;
 }
 
 .subscribe-button:focus {
@@ -558,8 +573,8 @@ body {
   outline: none;
 }
 
-.subscribe-button:hover {
-  background-color: #68A2CA;
+.subscribe-button:active {
+  opacity: 0.3;
 }
 
 .footer {
@@ -627,7 +642,7 @@ body {
 }
 
 .footer-link:hover {
-  color: #68a2ca
+  opacity: 0.6;
 }
 
 .footer-link:focus {
@@ -639,7 +654,7 @@ body {
 }
 
 .footer-link-contacts:hover {
-  color: #756157;
+  opacity: 0.6;
 }
 
 .footer-link-contacts:focus {
@@ -650,16 +665,18 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.footer-link-logo:hover {
-  color: #756157;
+.footer-link-logo:hover svg path{
+  fill:#756157;
+  opacity: 0.6;
 }
 
-.footer-link-logo:focus {
-  color: #756157;
+.footer-link-logo:focus svg path{
+  fill:#756157;
 }
 
-.footer-link-logo:active {
-  color: rgba(117, 97, 87, 0.3);
+.footer-link-logo:active svg path{
+  fill:#756157;
+  opacity: 0.3;
 }
 .logo {
   display: block;

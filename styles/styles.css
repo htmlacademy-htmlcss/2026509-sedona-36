@@ -481,7 +481,7 @@ body {
 }
 
 .search-button {
-  padding: 10px 50px 10px 50px;
+  padding: 11px 50px 11px 50px;
   border-radius: 4px;
   background-color:#756157;
   font-size: 20px;
@@ -528,7 +528,7 @@ body {
 
 .subscribe-container {
   width: 684px;
-  padding: 96px 258px 109px 258px;
+  padding: 96px 258px 104px 258px;
   box-sizing: content-box;
 }
 
@@ -608,6 +608,7 @@ input:placeholder-shown:focus {
   width: 1060px;
   padding: 40px 70px 30px 70px;
   align-items: flex-start;
+  margin-top: 5px;
 }
 
 

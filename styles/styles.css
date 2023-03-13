@@ -129,7 +129,7 @@ body {
   z-index: 1;
 }
 
-.navigation-link-current:hover:after {
+.navigation-link-current::after {
   display: block;
 }
 
@@ -160,7 +160,7 @@ body {
 }
 
 .link-here:hover {
-  opacity: 0.6;
+  background-color  : #615048;
 }
 
 .link-here:focus {
@@ -169,7 +169,7 @@ body {
 }
 
 .link-here:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3) ;
 }
 
 .header-logo:hover {
@@ -413,6 +413,10 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-title-toun,
+.advantages-title-bridge {
+  margin-top: -11px;
+}
 
 .advantages-description {
    font-weight: 400;
@@ -459,8 +463,13 @@ body {
 .services-title {
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
+  margin-top: 32px;
 }
 
+.services-description {
+  margin-top: 29px;
+}
 .services-list {
   list-style-type: none;
 }
@@ -468,11 +477,11 @@ body {
 .search {
   text-align: center;
   width: 592px;
-  margin: 105px 304px 102px 304px;
+  margin: 92px 304px 102px 304px;
 }
 
 .search-button {
-  padding: 10px 50px 10px 50px;
+  padding: 11px 50px 11px 50px;
   border-radius: 4px;
   background-color:#756157;
   font-size: 20px;
@@ -480,16 +489,18 @@ body {
 }
 
 .search-button:hover {
-  opacity: 0.6;
+  background-color: #615048;
 }
 
 .search-button:focus {
+  background-color: #615048;
   box-shadow: inset 0 0 0 4px #e7e7e7;
   outline: none;
 }
 
 .search-button:active {
-  opacity: 0.3;
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-title {
@@ -517,7 +528,7 @@ body {
 
 .subscribe-container {
   width: 684px;
-  padding: 96px 258px 109px 258px;
+  padding: 96px 258px 104px 258px;
   box-sizing: content-box;
 }
 
@@ -547,17 +558,29 @@ body {
 
 .subscribe-email {
   width: 452px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   border-style: none;
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
+  background-color: #F2F2F2;
+  outline: none;
+}
+
+
+input:placeholder-shown:hover {
+  background-color: #E6E6E6;
+}
+
+input:placeholder-shown:focus {
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  outline: none;
 }
 
 .subscribe-button {
   width: 238px;
   background-color: #82B3D3;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   padding: 8px 50px 8px 50px;
   font-size: 20px;
   line-height: 36px;
@@ -565,7 +588,7 @@ body {
 
 
 .subscribe-button:hover {
-  opacity: 0.6;
+  background-color: #68A2CA;
 }
 
 .subscribe-button:focus {
@@ -573,7 +596,8 @@ body {
   outline: none;
 }
 
-.subscribe-button:active {
+
+.subscribe-button:active span {
   opacity: 0.3;
 }
 
@@ -584,6 +608,7 @@ body {
   width: 1060px;
   padding: 40px 70px 30px 70px;
   align-items: flex-start;
+  margin-top: 5px;
 }
 
 
@@ -597,7 +622,7 @@ body {
 .footer-social-container {
   width: 47px;
   min-height: 20px;
-  padding: 0px 10px 0px 10px;
+  padding: 0 10px 0  10px;
 }
 
 .footer-social-list {
@@ -638,10 +663,12 @@ body {
 
 .footer-link-contacts {
   color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .footer-link:hover {
-  opacity: 0.6;
+  color: #68A2CA;
 }
 
 .footer-link:focus {
@@ -653,7 +680,7 @@ body {
 }
 
 .footer-link-contacts:hover {
-  opacity: 0.6;
+  color: #756157;
 }
 
 .footer-link-contacts:focus {
@@ -666,7 +693,6 @@ body {
 
 .footer-link-logo:hover svg path{
   fill:#756157;
-  opacity: 0.6;
 }
 
 .footer-link-logo:focus svg path{

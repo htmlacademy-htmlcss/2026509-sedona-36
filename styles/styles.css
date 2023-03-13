@@ -164,8 +164,7 @@ body {
 }
 
 .link-here:focus {
-  box-shadow: inset 0 0 0 4px #e7e7e7;
-  outline: none;
+  background-color  : #615048;
 }
 
 .link-here:active {
@@ -266,7 +265,7 @@ body {
 }
 
 .sedona {
-  margin: 61px 276px;
+  margin: 67px 276px 61px 276px;
 }
 .sedona-title {
   width: 651px;
@@ -282,7 +281,12 @@ body {
 .hero-image {
   background-position: center ,center;
   padding-top: 51px;
-  padding-bottom: 82px;
+  padding-bottom: 79px;
+}
+
+.advantages {
+  text-align: center;
+  margin-top: 84px;
 }
 
 .advantages-list {
@@ -299,13 +303,13 @@ body {
 .advantages-item-container {
   width: 400px;
   min-height: 200px;
-  height: 385px;
-  padding: 90px 85px;
+  padding: 88px 85px;
   box-sizing: border-box;
 }
 .advantages-image {
   display: flex;
-
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages-item-toun{
@@ -369,7 +373,7 @@ body {
 
 
 .services-invite {
-  margin: 64px 347.5px;
+  margin: 63px 347.5px 64px 347.5px;
 }
 
 .services-list {
@@ -381,7 +385,7 @@ body {
 
 .services-item-container {
   width: 400px;
-  padding: 151px 85px 65px 85px;
+  padding: 153px 85px 65px 85px;
   min-height: 200px;
   box-sizing: border-box;
 }
@@ -397,12 +401,6 @@ body {
   background-position: bottom ,0 0;
 }
 
-
-.advantages {
-  text-align: center;
-  margin-top: 90px;
-}
-
 .advantages-title {
   position: relative;
   margin: 0;
@@ -415,7 +413,7 @@ body {
 
 .advantages-title-toun,
 .advantages-title-bridge {
-  margin-top: -11px;
+  margin-top: -9px;
 }
 
 .advantages-description {
@@ -447,12 +445,14 @@ body {
 .services {
   text-align: center;
   list-style-type: none;
+  margin-top: -4px;
 }
 
 .services-invite-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: -4px;
 }
 
 .services-invite-subtitle {
@@ -481,7 +481,7 @@ body {
 }
 
 .search-button {
-  padding: 11px 50px 11px 50px;
+  padding: 12px 50px 12px 50px;
   border-radius: 4px;
   background-color:#756157;
   font-size: 20px;
@@ -494,8 +494,6 @@ body {
 
 .search-button:focus {
   background-color: #615048;
-  box-shadow: inset 0 0 0 4px #e7e7e7;
-  outline: none;
 }
 
 .search-button:active {
@@ -507,13 +505,13 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 24px;
 }
 
 .hotel-subtitle {
   font-size: 22px;
   line-height: 26px;
-  margin-bottom: 62px;
+  margin-bottom: 60px;
 }
 
 .subscribe {
@@ -528,7 +526,7 @@ body {
 
 .subscribe-container {
   width: 684px;
-  padding: 96px 258px 104px 258px;
+  padding: 97px 258px 103px 258px;
   box-sizing: content-box;
 }
 
@@ -563,8 +561,10 @@ body {
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
+  padding-top: 6px;
   background-color: #F2F2F2;
   outline: none;
+  letter-spacing: -0.5px;
 }
 
 
@@ -592,8 +592,7 @@ input:placeholder-shown:focus {
 }
 
 .subscribe-button:focus {
-  box-shadow: inset 0 0 0 4px #e7e7e7;
-  outline: none;
+  background-color: #68A2CA;
 }
 
 
@@ -608,7 +607,7 @@ input:placeholder-shown:focus {
   width: 1060px;
   padding: 40px 70px 30px 70px;
   align-items: flex-start;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 

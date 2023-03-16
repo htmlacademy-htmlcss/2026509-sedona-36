@@ -690,15 +690,15 @@ input:placeholder-shown:focus {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.footer-link-logo:hover svg path{
+.footer-link-logo:hover path{
   fill:#756157;
 }
 
-.footer-link-logo:focus svg path{
+.footer-link-logo:focus path{
   fill:#756157;
 }
 
-.footer-link-logo:active svg path{
+.footer-link-logo:active path{
   fill:#756157;
   opacity: 0.3;
 }
